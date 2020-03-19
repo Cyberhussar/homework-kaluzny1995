@@ -1,7 +1,7 @@
 from typing import List
-
 import pandas as pd
-from datetime import timedelta, date
+import datetime
+
 
 CONFIRMED_CASES_URL = f"https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data" \
                       f"/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv "
