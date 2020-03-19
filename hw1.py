@@ -104,4 +104,4 @@ def no_new_cases_count(day: int, month: int, year: int = 2020) -> int:
         # date after last notification (no knowledge about new cases) -> 0
         return 0
     else:
-        return confirmed_cases[confirmed_cases[dt_str] - confirmed_cases[dty_str] > 0]['Country/Region'].count()
+        return confirmed_cases[confirmed_cases[dt_str] - confirmed_cases[dty_str] != 0]['Country/Region'].count()
